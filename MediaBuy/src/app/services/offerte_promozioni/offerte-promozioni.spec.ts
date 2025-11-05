@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OffertePromozioni } from './offerte-promozioni';
+import { OffertePromozioniService } from './offerte-promozioni';
 
 describe('OffertePromozioni', () => {
-  let service: OffertePromozioni;
+  let service: OffertePromozioniService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(OffertePromozioni);
+    service = TestBed.inject(OffertePromozioniService);
   });
 
   it('should be created', () => {
