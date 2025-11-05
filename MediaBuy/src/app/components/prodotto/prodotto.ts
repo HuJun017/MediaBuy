@@ -9,9 +9,11 @@ import { RouterLink } from '@angular/router';
   templateUrl: './prodotto.html',
   styleUrl: './prodotto.css',
 })
+
 export class Prodotto {
   @Input() nome!: string;
-  @Input() costo!: BigInteger;
+  @Input() costo!: number;
   @Input() descrizione!: string;
-  @Input() durataGaranzia!: BigInteger;
+  @Input() durataGaranzia!: number;
+  @Input() immagine!: string;  // ← Deve essere presente
 }

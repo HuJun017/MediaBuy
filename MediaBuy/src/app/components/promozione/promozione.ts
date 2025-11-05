@@ -13,4 +13,5 @@ export class Promozione {
   @Input() titolo!: string;
   @Input() content!: string;
   @Input() data!: string;
+  @Input() immagine!: string;
 }

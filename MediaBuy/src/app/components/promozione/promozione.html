@@ -1,5 +1,30 @@
-<div style="border:2px dashed black; padding:12px; margin:12px;">
-    <h2>{{ titolo }}</h2>
-    <p>{{ content }}</p>
-    <p>{{ data }}</p>
+<div class="card border-danger border-2 shadow-sm m-3 overflow-hidden">
+  <div class="row g-0">
+    <!-- Immagine a sinistra -->
+    <div class="col-md-4 position-relative">
+      <img [src]="immagine" 
+           [alt]="titolo" 
+           class="img-fluid h-100 w-100"
+           style="object-fit: cover;">
+      <span class="position-absolute top-0 start-0 m-2 badge bg-warning text-dark">
+        <i class="bi bi-lightning-fill"></i> OFFERTA
+      </span>
+    </div>
+    
+    <!-- Contenuto a destra -->
+    <div class="col-md-8">
+      <div class="card-header bg-danger text-white">
+        <h2 class="card-title mb-0 h5">{{ titolo }}</h2>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ content }}</p>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <small class="text-muted">
+            <i class="bi bi-calendar3 me-1"></i>{{ data }}
+          </small>
+          <button class="btn btn-danger btn-sm">Scopri di più</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
