@@ -1,1 +1,10 @@
-<p>pagina-2-catalogo works!</p>
+<div *ngIf = "mostraProdotti">
+    <h1>I NOSTRO CATALOGO</h1>
+    <app-prodotto
+    *ngFor = "let prodotto of prodotti"
+    [nome] = "prodotto.nome"
+    [costo] = "prodotto.costo"
+    [descrizione] = 'prodotto.descrizione'
+    [durataGaranzia] = 'prodotto.durataGaranzia'>
+    </app-prodotto>
+</div>
