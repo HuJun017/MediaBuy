@@ -1,7 +1,9 @@
-<h1>OFFERTE E PROMOZIONI</h1>
-<app-prodotto 
-*ngFor = "let offerta of offerte"
-[titolo] = "offerta.titolo"
-[content] = "offerta.content">
-</app-prodotto>
-
+<div *ngIf = "mostraOfferte">
+    <h1>OFFERTE E PROMOZIONI</h1>
+    <app-promozione
+    *ngFor = "let offerta of offerte"
+    [titolo] = "offerta.titolo"
+    [content] = "offerta.content"
+    [data] = 'offerta.data'>
+    </app-promozione>
+</div>
